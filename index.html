@@ -4,29 +4,35 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Dzhensen Architecture</title>
-  <link rel="stylesheet" href="style-mobile.css" />
+  <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
   <div class="media-grid">
-    <!-- Top-left -->
-    <div class="grid-item" id="item1">
-      <img src="assets/image1.jpg" alt="Artwork" />
+
+    <!-- Top-left: Image -->
+    <div class="grid-item">
+      <img src="assets/image1.jpg" alt="Artwork" class="media-item image-medium" />
     </div>
 
-    <!-- Top-right -->
-    <div class="grid-item" id="item2">
-      <video src="assets/example3.mp4" autoplay loop muted playsinline></video>
+    <!-- Top-right: Small video -->
+    <div class="grid-item">
+      <video src="assets/example3.mp4" autoplay muted playsinline loop preload="auto"
+        class="media-item video-small"></video>
     </div>
 
-    <!-- Bottom-left -->
-    <div class="grid-item" id="item3">
-      <video src="assets/example.mp4" autoplay loop muted playsinline></video>
+    <!-- Bottom-left: Main video -->
+    <div class="grid-item">
+      <video src="assets/example.mp4" autoplay muted playsinline loop preload="auto"
+        class="media-item video-regular"></video>
     </div>
 
-    <!-- Bottom-right -->
-    <div class="grid-item" id="item4">
-      <video src="assets/example2.mp4" autoplay loop muted playsinline></video>
+    <!-- Bottom-right: Second video -->
+    <div class="grid-item">
+      <video src="assets/example2.mp4" autoplay muted playsinline loop preload="auto"
+        class="media-item video-regular"></video>
     </div>
+
   </div>
 </body>
 </html>
